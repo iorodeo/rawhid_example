@@ -58,18 +58,6 @@ bool SystemState::send_msg_to_host()
 }
 
 
-void SystemState::on_send_msg_error()  
-{
-    // Take action on send message error - empty for example
-}
-
-
-void SystemState::on_recv_msg_error()  
-{
-    // Take action on receive message error - empty for example
-}
-
-
 bool SystemState::recv_msg_from_host()
 {
     bool rtn_val = true;
@@ -85,6 +73,18 @@ bool SystemState::recv_msg_from_host()
         command_switchyard();
     }
     return rtn_val;
+}
+
+
+void SystemState::on_send_msg_error()  
+{
+    // Take action on send message error - empty for example
+}
+
+
+void SystemState::on_recv_msg_error()  
+{
+    // Take action on receive message error - empty for example
 }
 
 
